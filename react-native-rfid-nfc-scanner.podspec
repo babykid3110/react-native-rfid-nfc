@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.authors = package[:author]
   s.summary = package[:description]
   s.source = { git: package[:repository][:url] }
-  s.source_files = "ios/**/*.{h,m}"
+  s.source_files = "ios/**/*.{h,m,swift}"
   s.platform = :ios, "8.0"
-
+  s.swift_version = '5.1'
   s.dependency "React"
 end
